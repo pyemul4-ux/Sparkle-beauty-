@@ -1,0 +1,595 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f5f0;
+color:#2d1b14;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:22px 7%;
+
+background:rgba(248,245,240,0.88);
+
+backdrop-filter:blur(12px);
+
+z-index:1000;
+}
+
+.logo{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:30px;
+
+font-weight:700;
+
+color:#2d1b14;
+
+letter-spacing:1px;
+}
+
+nav{
+display:flex;
+gap:28px;
+}
+
+nav a{
+
+text-decoration:none;
+
+font-size:15px;
+
+font-weight:500;
+
+color:#2d1b14;
+
+transition:0.3s;
+}
+
+nav a:hover{
+color:#b69359;
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(248,245,240,0.58),rgba(248,245,240,0.68)),
+url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+
+padding:0 7%;
+
+position:relative;
+}
+
+.hero-overlay{
+
+position:absolute;
+
+width:100%;
+height:100%;
+}
+
+.hero-content{
+
+position:relative;
+
+max-width:620px;
+}
+
+.welcome{
+
+font-size:12px;
+
+font-weight:600;
+
+letter-spacing:4px;
+
+color:#8f6b46;
+
+margin-bottom:24px;
+}
+
+.hero h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:88px;
+
+line-height:0.95;
+
+font-weight:600;
+
+max-width:500px;
+
+margin-bottom:28px;
+
+color:#2d1b14;
+}
+
+.hero-text{
+
+font-size:18px;
+
+line-height:2;
+
+color:#5f4c42;
+
+margin-bottom:42px;
+}
+
+.hero-buttons{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.dark-btn,
+.light-btn{
+
+padding:18px 36px;
+
+border-radius:60px;
+
+font-size:15px;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:0.3s;
+}
+
+.dark-btn{
+
+background:#2d1b14;
+
+color:white;
+}
+
+.light-btn{
+
+border:1px solid #c5ab7d;
+
+color:#2d1b14;
+}
+
+.dark-btn:hover{
+transform:translateY(-4px);
+}
+
+.light-btn:hover{
+background:#f1e3cb;
+}
+
+/* SECTION */
+
+section{
+padding:120px 7%;
+}
+
+.section-tag{
+
+font-size:13px;
+
+letter-spacing:4px;
+
+color:#b69359;
+
+margin-bottom:16px;
+}
+
+.center{
+text-align:center;
+}
+
+/* ABOUT */
+
+.about-content{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+}
+
+.about h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:72px;
+
+margin-bottom:28px;
+}
+
+.about p{
+
+font-size:18px;
+
+line-height:2.1;
+
+color:#5f4c42;
+}
+
+/* STATS */
+
+.luxury-info{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:28px;
+
+margin-top:70px;
+}
+
+.info-card{
+
+background:white;
+
+padding:38px;
+
+border-radius:28px;
+
+box-shadow:0 8px 30px rgba(0,0,0,0.05);
+
+transition:0.3s;
+}
+
+.info-card:hover{
+transform:translateY(-8px);
+}
+
+.info-card h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:34px;
+
+margin-bottom:16px;
+
+color:#2d1b14;
+}
+
+.info-card p{
+
+font-size:15px;
+
+line-height:1.9;
+
+color:#5f4c42;
+}
+
+/* SERVICES */
+
+.services{
+background:#fcfaf7;
+}
+
+.services-title{
+
+text-align:center;
+
+margin-bottom:70px;
+}
+
+.services-title h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:72px;
+}
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+}
+
+.service-card{
+
+background:white;
+
+border-radius:35px;
+
+overflow:hidden;
+
+box-shadow:0 10px 35px rgba(0,0,0,0.05);
+
+transition:0.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-card img{
+
+width:100%;
+
+height:360px;
+
+object-fit:cover;
+}
+
+.service-content{
+padding:35px;
+}
+
+.service-content h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+margin-bottom:18px;
+}
+
+.service-content p{
+
+line-height:1.9;
+
+color:#5f4c42;
+
+margin-bottom:25px;
+}
+
+.service-bottom{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding-top:20px;
+
+border-top:1px solid #eee;
+}
+
+.service-bottom span{
+
+font-weight:600;
+
+color:#b69359;
+}
+
+.service-bottom a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#2d1b14;
+}
+
+/* REVIEWS */
+
+.reviews{
+background:#f4ede3;
+}
+
+.review-box{
+
+max-width:750px;
+
+margin:auto;
+
+background:white;
+
+padding:55px;
+
+border-radius:35px;
+
+box-shadow:0 10px 35px rgba(0,0,0,0.05);
+}
+
+.review-box h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:58px;
+
+text-align:center;
+
+margin-bottom:35px;
+}
+
+/* BOOKING */
+
+.booking{
+background:#fcfaf7;
+}
+
+.booking-box{
+
+max-width:750px;
+
+margin:auto;
+
+background:white;
+
+padding:55px;
+
+border-radius:35px;
+
+box-shadow:0 10px 35px rgba(0,0,0,0.05);
+}
+
+.booking-box h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:58px;
+
+text-align:center;
+
+margin-bottom:35px;
+}
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,
+textarea,
+select{
+
+padding:20px;
+
+border:none;
+
+background:#f8f5f0;
+
+border-radius:18px;
+
+font-size:16px;
+
+font-family:'Poppins',sans-serif;
+}
+
+textarea{
+
+height:160px;
+
+resize:none;
+}
+
+button{
+
+padding:18px;
+
+border:none;
+
+border-radius:60px;
+
+background:#2d1b14;
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.3s;
+}
+
+button:hover{
+background:#1d100b;
+}
+
+/* FOOTER */
+
+footer{
+
+background:#2d1b14;
+
+padding:60px 20px;
+
+text-align:center;
+
+color:white;
+}
+
+footer h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+margin-bottom:15px;
+}
+
+footer p{
+
+margin-bottom:18px;
+
+color:#e7cfab;
+}
+
+footer a{
+
+text-decoration:none;
+
+color:#f1d8a7;
+
+font-weight:600;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+padding:18px 5%;
+}
+
+nav{
+display:none;
+}
+
+.hero{
+padding:0 5%;
+}
+
+.hero h1{
+font-size:58px;
+}
+
+.about h2,
+.services-title h2,
+.review-box h2,
+.booking-box h2{
+font-size:46px;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+.review-box,
+.booking-box{
+padding:35px 25px;
+}
+
+}
