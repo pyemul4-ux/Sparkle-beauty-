@@ -24,7 +24,7 @@ Service: ${service}
 Message: ${message}`;
 
 let url =
-"https://wa.me/919420713845?text=" + encodeURIComponent(whatsappMessage);
+"https://wa.me/919921731446?text=" + encodeURIComponent(whatsappMessage);
 
 window.open(url, "_blank");
 
